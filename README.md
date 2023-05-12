@@ -4,13 +4,15 @@ a simple hook for sharing state between sibling components
 
 ## Installation
 
-```
+To install via `npm`
+
+```bash
 npm install @development-laboritories/react-shared-state-hook
 ```
 
 or
 
-```
+```bash
 yarn add @development-laboritories/react-shared-state-hook
 ```
 
