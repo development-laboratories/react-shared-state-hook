@@ -1,6 +1,6 @@
 {
   "name": "@development-laboritories/react-shared-state-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple way to share state between hooks",
   "main": "dist/index.js",
   "dependencies": {
