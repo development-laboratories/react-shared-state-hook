@@ -228,5 +228,8 @@
   "bugs": {
     "url": "https://github.com/development-laboratories/react-shared-state-hook/issues"
   },
-  "homepage": "https://github.com/development-laboratories/react-shared-state-hook#readme"
+  "homepage": "https://github.com/development-laboratories/react-shared-state-hook#readme",
+  "publishConfig": {
+    "@development-laboritories:registry": "https://npm.pkg.github.com"
+  }
 }
