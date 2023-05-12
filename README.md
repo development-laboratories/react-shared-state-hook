@@ -18,7 +18,7 @@ yarn add @development-laboritories/react-shared-state-hook
 
 Use the following to import the `createSharedHook` function which is used to create a hook with shared state:
 
-```
+```ts
 import { createSharedState } from "@development-laboritories/react-shared-state-hook";
 ```
 
