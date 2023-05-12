@@ -16,20 +16,26 @@ yarn add @development-laboritories/react-shared-state-hook
 
 ## Basic Usage
 
-Create a new hook you would like to share state:
+Use the following to import the `createSharedHook` function which is used to create a hook with shared state:
+
+```
+import { createSharedState } from "@development-laboritories/react-shared-state-hook";
+```
+
+Now we can pass in an `initialValue` in this case **"en"** and we get back a new shared state hook:
 
 ```ts
-import { createSharedState } from "@development-laboritories/react-shared-state-hook";
-
-// create a new shared hook which can be used for locale
 const useSharedLocale = createSharedState("en");
+```
 
-// now each place this hook is called the state will be the same!
+Next let's add some logic for updating the state and returning the now shared `locale`
+
+```ts
 export function useSharedLocale() {
-  const [locale, setLocale] = useSharedLocale();
+  const [locale, setLocale] = useSharedLocale(); // locale will be "en"
 
   useEffect(() => {
-    const deviceLocale = "fr"; // example: reading preferred device setting
+    const deviceLocale = "fr"; // example value
     setLocale(deviceLocale);
   }, []);
 
@@ -37,7 +43,7 @@ export function useSharedLocale() {
 }
 ```
 
-Then in any component which needs this value:
+To use this value just import the hook above
 
 ```ts
 import { useLocale } from "./useSharedLocale";
