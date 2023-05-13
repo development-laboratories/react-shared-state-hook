@@ -1,15 +1,15 @@
 # 🪝 React Shared State Hook
 
-| react-shared-state-hook | 1.0.5 |
+| react-shared-state-hook | 1.1.1 |
 | ----------------------- | ----- |
 
 A simple yet powerful way to share state between components and hooks.
 
-- The convenience of `redux` without the complexity
+- *The convenience of **redux** without the complexity*
 
-- Lightweight and easy to use
+- Lightweight & easy to use
 
-- Quickly prototype
+- Quickly prototype!
 
 ## Why this package?
 
