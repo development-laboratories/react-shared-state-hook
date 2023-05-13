@@ -11,7 +11,7 @@ A simple yet powerful way to share state between components and hooks.
 
 - Quickly prototype
 
-## Why?
+## Why this package?
 
 <img width="994" alt="Screenshot 2023-05-13 at 1 32 07 AM" src="https://github.com/development-laboratories/react-shared-state-hook/assets/10716803/9b3a49b6-d552-4a60-bf96-6a102e2ac13b">
 
