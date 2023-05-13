@@ -39,46 +39,44 @@ Use the following to import the `createSharedHook` function which is used to cre
 import { createSharedState } from "@development-laboritories/react-shared-state-hook";
 ```
 
-Now we can pass in an `initialValue` in this case **"en"** and we get back a new shared state hook:
+This will return a hook initialized with the given value that we can use anywhere we want
 
 ```ts
-// create a shared state hook that will be initialized with "english"
 const useSharedLocale = createSharedState("english");
+```
 
-// now we can export a new hook which contains the shared state
+For example let's say we want to share `locale` we can just create a new hook and call `useSharedLocale` like so
+```
 export function useLocale() {
   const [locale, setLocale] = useSharedLocale(); // locale will be "english"
 
   useEffect(() => {
     setLocale(Device.systemLocale); // example
-  }, []);
+  }, [])
 
-  return { locale, setLocale };
+  return { locale, setLocale }
 }
 ```
 
-In this example we have two components that now share the same state, without the need of re-rendering any parents, adding another provider to the dom, or having to implement a new redux reducer, action, etc.
+Now anywhere we want to access or update the `locale` it's as easy as
 
 ```ts
-import { useLocale } from "./useLocale";
+import { useLocale } from "./useLocale"
 
-// example component #1
 function SpanishLanguageButton() {
-  const { setLocale } = useSharedLocale();
-  return <button onClick={() => setLocale("spanish")}>{locale}</button>;
+  const { setLocale } = useLocale()
+  return <button onClick={() => setLocale("spanish")}>{locale}</button>
 }
 
-// example component #2
 function ItalianLanguageButton() {
-  const { setLocale } = useSharedLocale();
-  return <button onClick={() => setLocale("italian")}>{locale}</button>;
+  const { setLocale } = useLocale()
+  return <button onClick={() => setLocale("italian")}>{locale}</button>
 }
 
-// example component #3
 function CurrentLanguage() {
-  const { locale } = useSharedLocale();
-  return <p>{`The current language is ${locale}`}</p>;
+  const { locale } = useLocale()
+  return <p>{`The current language is ${locale}`}</p>
 }
 ```
 
-Now all three of these components will share exactly the same state, no matter where they are in the DOM!
+All three of these components will share exactly the same state, no matter where they are in the DOM!
