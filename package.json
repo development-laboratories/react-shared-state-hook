@@ -1,5 +1,5 @@
 {
-  "name": "@development-laboritories/react-shared-state-hook",
+  "name": "@development-laboratories/react-shared-state-hook",
   "version": "1.0.5",
   "description": "a simple way to share state between hooks",
   "main": "dist/index.js",
@@ -25,5 +25,17 @@
   "bugs": {
     "url": "https://github.com/development-laboratories/react-shared-state-hook/issues"
   },
-  "homepage": "https://github.com/development-laboratories/react-shared-state-hook#readme"
+  "homepage": "https://github.com/development-laboratories/react-shared-state-hook#readme",
+  "dependencies": {
+    "csstype": "^3.1.2",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "react",
+    "shared",
+    "state",
+    "hook"
+  ]
 }
