@@ -1,4 +1,4 @@
-# React Shared State Hook 🪝
+# 🪝 React Shared State Hook
 
 | react-shared-state-hook | 1.0.5 |
 | ----------------------- | ----- |
@@ -8,6 +8,12 @@ A simple yet powerful way to share state between components and hooks.
 - The convenience of `redux` without the complexity
 - Lightweight and easy to use
 - Quickly prototype
+
+## Why?
+
+Sharing state is one of the most important concepts in React, and while there exists numerous solutions from 'redux', 'rxjs', 'context', etc. each has their own drawbacks.
+
+This package provides a quick and seemless way to share state from a single integer to comlpex objects, between as many components as you need!
 
 ## Installation
 
@@ -20,12 +26,6 @@ or
 ```bash
 yarn add @development-laboritories/react-shared-state-hook
 ```
-
-## Why?
-
-Sharing state is one of the most important concepts in React, and while there exists numerous solutions from 'redux', 'rxjs', 'context', etc. each has their own drawbacks.
-
-This package provides a quick and seemless way to share state from a single integer to comlpex objects, between as many components as you need!
 
 ## Basic Usage
 
