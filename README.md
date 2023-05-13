@@ -6,7 +6,9 @@
 A simple yet powerful way to share state between components and hooks.
 
 - The convenience of `redux` without the complexity
+
 - Lightweight and easy to use
+
 - Quickly prototype
 
 ## Why?
