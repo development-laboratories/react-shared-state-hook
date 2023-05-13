@@ -42,11 +42,12 @@ import { createSharedState } from "@development-laboritories/react-shared-state-
 This will return a hook initialized with the given value that we can use anywhere we want
 
 ```ts
-const useSharedLocale = createSharedState("english");
+const useSharedLocale = createSharedState<Locale>("english");
 ```
 
 For example let's say we want to share `locale` we can just create a new hook and call `useSharedLocale` like so
-```
+
+```ts
 export function useLocale() {
   const [locale, setLocale] = useSharedLocale(); // locale will be "english"
 
