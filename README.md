@@ -2,9 +2,10 @@
 
 a simple hook for sharing state between sibling components
 
-## Installation
+| react-shared-state-hook | 1.0.5 |
+| ----------------------- | ----- |
 
-To install via `npm`
+## Installation
 
 ```bash
 npm install @development-laboritories/react-shared-state-hook
